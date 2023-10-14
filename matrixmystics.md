@@ -202,7 +202,6 @@ $$B=\begin{bmatrix} 1 & 2 \\ 2 & 4\\ \end{bmatrix}:\mathbb{R^2}\mapsto \mathbb{R
 5. Consider $$A=\begin{bmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \\ 7 & 8 & 9 \\ \end{bmatrix}$$. What is $$N(A)$$, $$C(A)$$, $$R(A)$$, $$N(A^T)$$.<br>
 
 6. Consider a 4x4 matrix $$M$$: $$\mathbb{R^4}\mapsto \mathbb{R^4}$$ whose range is<br>
-
 a) $$4-Dimension$$<br>
 b) $$3-Dimension$$ <br>
 c) $$2-Dimension$$ <br>
@@ -210,16 +209,11 @@ d) $$1-Dimension$$ <br>
 e) $$0-Dimension$$ <br>
 Give an example each for all the above 5 cases.<br>
 
-7. Consider $$A : \mathbb{R^{3}} \to \mathbb{R^{3}} $$
-
-a) S.T. if the range contains a point $$(a,b,c)$$, then it Should contain the entire set $S$, defined by:
-$$S= \{\alpha(a, b,c) \alpha \in {R}\}$$ 
-
-
+7. Consider $$A : \mathbb{R^{3}} \to \mathbb{R^{3}} $$<br>
+a) S.T. if the range contains a point $$(a,b,c)$$, then it should contain the entire set $S$, defined by:
+$$S= \{\alpha(a, b,c)/ \alpha \in \mathbb{R}\}$$. <br>
 b) S.T. if the range contains the points $$(a,b,c)$$ and $$(d,e,f)$$, then the range contains the entire set $$T$$ defined by:
-$$T=\{\alpha(a,b,c) + \beta(d,e,f) \thinspace/\thinspace  \alpha,\beta\in {R}\}$$
-
-
+$$T=\{\alpha(a,b,c) + \beta(d,e,f) \thinspace/\thinspace  \alpha,\beta\in \mathbb{R}\}$$.<br>
 c) Note: $$S$$ is of the dimension $$1$$, but $$T$$ need'nt be of dimension $$2$$. Think!
 
 
