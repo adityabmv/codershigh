@@ -165,12 +165,12 @@ $$ \begin{bmatrix}1 & 2 & 3\\ 4 & 5 &6\\ 7 & 8 & 9\\ \end{bmatrix} \begin{bmatri
  Observe carefully, what has this question got to do with previous five questions in this module
 
 10. Given the matrix $$A=\begin{bmatrix}1 & 2 & 3\\ 4 & 5 &6\\ 7 & 8 & 9\\ \end{bmatrix}$$ what does the following three sets represent?<br>
-(i) $$R=\{\alpha(1,2,3) + \beta(4,5,6) + \gamma(7,8,9) |\alpha, \beta, \gamma\in \mathbb{R}\} $$<br>
+(i) $$\mathscr{R}=\{\alpha(1,2,3) + \beta(4,5,6) + \gamma(7,8,9) |\alpha, \beta, \gamma\in \mathbb{R}\} $$<br>
 (ii) $$C=\{\alpha(1,4,7) + \beta(2,5,8) + \gamma(3,6,9) | \alpha, \beta, \gamma \in \mathbb{R}\}$$<br>
 (iii) $$N=\{(x,y,z)|x(1,4,7) + y(2,5,8) + z(3,6,9) = 0 \}$$<br>
  Use only Geogebra :)
 
-11. Did you observe that every vector of $$R$$ is perpendicular to every vector of $$N$$?
+11. Did you observe that every vector of $$\mathscr{R}$$ is perpendicular to every vector of $$N$$?
 
 12. Consider the matrix $$B=\begin{bmatrix} 1 & 2 \\ 2 & 4\\ \end{bmatrix}$$. Draw the line $$2y+x=4$$. Seeing the matrix $$B$$ as a function $$B:\mathbb{R^2}\mapsto \mathbb{R^2}$$,<br> where does $$B$$ takes the line  $$2y+x=4$$?<br>
 Where does it take:<br>
@@ -187,14 +187,14 @@ $$B=\begin{bmatrix} 1 & 2 \\ 2 & 4\\ \end{bmatrix}:\mathbb{R^2}\mapsto \mathbb{R
 
 # Module 4
 
-1. Given the matrix $$M=\begin{bmatrix} 1 & 3 \\ 2 & 6\\ \end{bmatrix}$$. Use Geogebra to plot $$R$$, $$C$$ & $$N$$. what do you observe?<br>
-(i) $$R=\{\alpha(1,3) + \beta(2,6) | \alpha, \beta\in \mathbb{R}\} $$<br>
-(ii) $$C=\{\alpha(1,2) + \beta(3,6) | \alpha, \beta\in \mathbb{R}\} $$<br>
-(iii) $$N=\{(x,y)| x(1,3) + y(2,6) = 0 \}$$<br>
+1. Given the matrix $$M=\begin{bmatrix} 1 & 3 \\ 2 & 6\\ \end{bmatrix}$$. Use Geogebra to plot $$\mathscr{R}$$, $$\mathscr{C}$$ & $$\mathscr{N}$$. what do you observe?<br>
+(i) $$\mathscr{R}=\{\alpha(1,3) + \beta(2,6) | \alpha, \beta\in \mathbb{R}\} $$<br>
+(ii) $$\mathscr{C}=\{\alpha(1,2) + \beta(3,6) | \alpha, \beta\in \mathbb{R}\} $$<br>
+(iii) $$\mathscr{N}=\{(x,y)| x(1,3) + y(2,6) = 0, \forall x,y\in \mathbb{R} \}$$<br>
 
-2. Note that $$R$$ and $$N$$ are orthogonal.<br>
+2. Note that $$\mathscr{R}$$ and $$\mathscr{N}$$ are orthogonal.<br>
 
-3. What is  the null-space of $$M=\begin{bmatrix} 1 & 3 \\ 2 & 6\\ \end{bmatrix}$$ & the null-space of M^T?<br>
+3. What is  the null-space of $$M=\begin{bmatrix} 1 & 3 \\ 2 & 6\\ \end{bmatrix}$$ & the null-space of $$M^T$$?<br>
 
 4. Do you observe that $$C(M)$$ &#x22A5; $$N(M^T)$$ &nbsp; $$R(M)$$ &#x22A5; $$N(M^T)$$ ?<br>
 
@@ -213,6 +213,5 @@ a) S.T. if the range contains a point $$(a,b,c)$$, then it should contain the en
 $$S= \{\alpha(a, b,c)/ \alpha \in \mathbb{R}\}$$. <br>
 b) S.T. if the range contains the points $$(a,b,c)$$ and $$(d,e,f)$$, then the range contains the entire set $$T$$ defined by:
 $$T=\{\alpha(a,b,c) + \beta(d,e,f) \thinspace/\thinspace  \alpha,\beta\in \mathbb{R}\}$$.<br>
-c) Note: $$S$$ is of the dimension $$1$$, but $$T$$ need'nt be of dimension $$2$$. Think!
-
+c) Note: $$S$$ is of the dimension $$1$$, but $$T$$ need'nt be of dimension $$2$$. Think! 
 
