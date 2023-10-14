@@ -202,6 +202,7 @@ $$B=\begin{bmatrix} 1 & 2 \\ 2 & 4\\ \end{bmatrix}:\mathbb{R^2}\mapsto \mathbb{R
 5. Consider $$A=\begin{bmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \\ 7 & 8 & 9 \\ \end{bmatrix}$$. What is $$N(A)$$, $$C(A)$$, $$R(A)$$, $$N(A^T)$$.<br>
 
 6. Consider a 4x4 matrix $$M$$: $$\mathbb{R^4}\mapsto \mathbb{R^4}$$ whose range is<br>
+
 a) $$4-Dimension$$<br>
 b) $$3-Dimension$$ <br>
 c) $$2-Dimension$$ <br>
