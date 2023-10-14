@@ -187,15 +187,23 @@ $$B=\begin{bmatrix} 1 & 2 \\ 2 & 4\\ \end{bmatrix}:\mathbb{R^2}\mapsto \mathbb{R
 
 # Module 4
 
-1. 1. Given the matrix $$M=\begin{bmatrix} 1 & 3\ 2 & 6\ \end{bmatrix}$$. Use Geogebra to plot R, C & N. what do you observe?<br>
+1. 1. Given the matrix $$M=\begin{bmatrix} 1 & 3\\ 2 & 6\\ \end{bmatrix}$$. Use Geogebra to plot $$R$$, $$C$$ & $$N$$. what do you observe?<br>
 
 (i) $$R=\{\alpha(1,3) + \beta(2,6) | \alpha, \beta\in \mathbb{R}\} $$<br>
 (ii) $$C=\{\alpha(1,2) + \beta(3,6) | \alpha, \beta\in \mathbb{R}\} $$<br>
 (iii) $$N=\{(x,y)| x(1,3) + y(2,6) = 0 \}$$<br>
-2. <Maria>
-3. <Anurag>
-4. <Rishabh>
-5. <Rishabh>
+2. Note that $$R$$ and $$N$$ are orthogonal.
+3. What is  the null-space of $$M=\begin{bmatrix} 1 & 3 \\ 2 & 6 \\ end{bmatrix}$$ & the null-space of M^T?<br>
+4. Do you observe that $$C(M)$$ &#x22A5; $$N(M^T)$$ $$R(M)$$ &#x22A5; $$N(M^T)$$ ?
+5. Consider $$A=\begin{bmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \\ 7 & 8 & 9 \\ \end{bmatrix}$$. What is N(A), C(A), R(A), N(A^T).
+6.Consider a 4x4 matrix $$M$$: $$\mathbb{R^4}\mapsto \mathbb{R^4}$$ whose range is<br>
+a) $$4-Dimension$$<br>
+b) $$3-Dimension$$ <br>
+c) $$2-Dimension$$ <br>
+d) $$1-Dimension$$ <br>
+e) $$0-Dimension$$ <br>
+Give an example each for all the above 5 cases.
+
 7. - Consider a range containing a point "abc." Then, it should contain the entire set "S" defined by S = {e, a, b, c}.
 
 - If the range contains the points "abcdef," then the range should contain the entire set "T" defined by T = {d, a, b, c}.
@@ -203,12 +211,6 @@ $$B=\begin{bmatrix} 1 & 2 \\ 2 & 4\\ \end{bmatrix}:\mathbb{R^2}\mapsto \mathbb{R
 - Keep in mind that these rules should be followed when determining whether a range contains the specified sets.
 
 - Note: "Six" is of dimension 1, but "T" needn't be of dimension 2.
-
-
-
-
-
-
 
 
 
