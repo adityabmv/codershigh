@@ -197,7 +197,7 @@ $$B=\begin{bmatrix} 1 & 2 \\ 2 & 4\\ \end{bmatrix}:\mathbb{R^2}\mapsto \mathbb{R
 4. <Rishabh>
 5. <Rishabh>
 6.Consider a 4x4 matrix $$M$$: $$\mathbb{R^4}\mapsto \mathbb{R^4}$$ whose range is
-a) $$4-Dimension$$
+a) $4-Dimension$
 b) $$3-Dimension$$
 c) $$2-Dimension$$
 d) $$1-Dimension$$
