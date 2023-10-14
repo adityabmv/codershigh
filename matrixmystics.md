@@ -209,24 +209,19 @@ e) $$0-Dimension$$ <br>
 Give an example each for all the above 5 cases.<br>
 
 7. Consider $$A : \mathbb{R^{3}} \to \mathbb{R^{3}} $$<br>
-a) S.T. if the range contains a point $$(a,b,c)$$, then it should contain the entire set $S$, defined by:
+a) S.T. if the range contains a point $$(a,b,c)$$, then it should contain the entire set $$S$$, defined by:
 $$S= \{\alpha(a, b,c)/ \alpha \in \mathbb{R}\}$$. <br>
 b) S.T. if the range contains the points $$(a,b,c)$$ and $$(d,e,f)$$, then the range contains the entire set $$T$$ defined by:
 $$T=\{\alpha(a,b,c) + \beta(d,e,f) \thinspace/\thinspace  \alpha,\beta\in \mathbb{R}\}$$.<br>
 c) Note: $$S$$ is of the dimension $$1$$, but $$T$$ need'nt be of dimension $$2$$. Think! 
 
 # Module 5
-
 1. Give an example of two  $2-dim$ subspaces in $\mathbb{R^{3}}$. Let us call it $S_1, S_2$
-
 
 2. Let $S_3$ be all those vectors perpendicular to $S_1$. $S_4$ be that of $S_2$
 
-
 3. Find a matrix M whose Null-Space is $S_3$. column space is $S_2$
 
-
 4. What does $S_1$ $S_4$ represent
-
 
 5. Do you observe there is a bijection from $S_1  \to S_4$
