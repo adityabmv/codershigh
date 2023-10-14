@@ -204,6 +204,14 @@ d) $$1-Dimension$$ <br>
 e) $$0-Dimension$$ <br>
 Give an example each for all the above 5 cases.
 
+7. - Consider a range containing a point "abc." Then, it should contain the entire set "S" defined by S = {e, a, b, c}.
+
+- If the range contains the points "abcdef," then the range should contain the entire set "T" defined by T = {d, a, b, c}.
+
+- Keep in mind that these rules should be followed when determining whether a range contains the specified sets.
+
+- Note: "Six" is of dimension 1, but "T" needn't be of dimension 2.
+
 
 
 
