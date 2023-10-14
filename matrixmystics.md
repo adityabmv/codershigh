@@ -217,16 +217,16 @@ c) Note: $$S$$ is of the dimension $$1$$, but $$T$$ need'nt be of dimension $$2$
 
 # Module 5
 
-1) Give an example of two  $2-dim$ subspaces in $\mathbb{R^{3}}$. Let us call it $S_1, S_2$
+1. Give an example of two  $2-dim$ subspaces in $\mathbb{R^{3}}$. Let us call it $S_1, S_2$
 
 
-2) Let $S_3$ be all those vectors perpendicular to $S_1$. $S_4$ be that of $S_2$
+2. Let $S_3$ be all those vectors perpendicular to $S_1$. $S_4$ be that of $S_2$
 
 
-3)Find a matrix M whose Null-Space is $S_3$. column space is $S_2$
+3. Find a matrix M whose Null-Space is $S_3$. column space is $S_2$
 
 
-4)What does $S_1$ $S_4$ represent
+4. What does $S_1$ $S_4$ represent
 
 
-5) Do you observe there is a bijection from $S_1  \to S_4$
+5. Do you observe there is a bijection from $S_1  \to S_4$
