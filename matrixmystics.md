@@ -187,31 +187,39 @@ $$B=\begin{bmatrix} 1 & 2 \\ 2 & 4\\ \end{bmatrix}:\mathbb{R^2}\mapsto \mathbb{R
 
 # Module 4
 
-1. 1. Given the matrix $$M=\begin{bmatrix} 1 & 3\\ 2 & 6\\ \end{bmatrix}$$. Use Geogebra to plot $$R$$, $$C$$ & $$N$$. what do you observe?<br>
+1. Given the matrix $$M=\begin{bmatrix} 1 & 3 \\ 2 & 6\\ \end{bmatrix}$$. Use Geogebra to plot $$R$$, $$C$$ & $$N$$. what do you observe?<br>
 
 (i) $$R=\{\alpha(1,3) + \beta(2,6) | \alpha, \beta\in \mathbb{R}\} $$<br>
 (ii) $$C=\{\alpha(1,2) + \beta(3,6) | \alpha, \beta\in \mathbb{R}\} $$<br>
 (iii) $$N=\{(x,y)| x(1,3) + y(2,6) = 0 \}$$<br>
+
 2. Note that $$R$$ and $$N$$ are orthogonal.<br>
-3. What is  the null-space of $$M=\begin{bmatrix} 1 & 3 \\ 2 & 6 \\ end{bmatrix}$$ & the null-space of M^T?<br>
-4. Do you observe that $$C(M)$$ &#x22A5; $$N(M^T)$$ $$R(M)$$ &#x22A5; $$N(M^T)$$ ?<br>
-5. Consider $$A=\begin{bmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \\ 7 & 8 & 9 \\ \end{bmatrix}$$. What is N(A), C(A), R(A), N(A^T).<br>
-6.Consider a 4x4 matrix $$M$$: $$\mathbb{R^4}\mapsto \mathbb{R^4}$$ whose range is<br>
+
+3. What is  the null-space of $$M=\begin{bmatrix} 1 & 3 \\ 2 & 6\\ \end{bmatrix}$$ & the null-space of M^T?<br>
+
+4. Do you observe that $$C(M)$$ &#x22A5; $$N(M^T)$$ &nbsp; $$R(M)$$ &#x22A5; $$N(M^T)$$ ?<br>
+
+5. Consider $$A=\begin{bmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \\ 7 & 8 & 9 \\ \end{bmatrix}$$. What is $$N(A)$$, $$C(A)$$, $$R(A)$$, $$N(A^T)$$.<br>
+
+6. Consider a 4x4 matrix $$M$$: $$\mathbb{R^4}\mapsto \mathbb{R^4}$$ whose range is<br>
+
 a) $$4-Dimension$$<br>
 b) $$3-Dimension$$ <br>
 c) $$2-Dimension$$ <br>
 d) $$1-Dimension$$ <br>
 e) $$0-Dimension$$ <br>
-Give an example each for all the above 5 cases.
+Give an example each for all the above 5 cases.<br>
 
-7. - Consider a range containing a point "abc." Then, it should contain the entire set "S" defined by S = {e, a, b, c}.
+7. Consider $A : \mathbb{R^{3}} \to \mathbb{R^{3}} $
 
-- If the range contains the points "abcdef," then the range should contain the entire set "T" defined by T = {d, a, b, c}.
-
-- Keep in mind that these rules should be followed when determining whether a range contains the specified sets.
-
-- Note: "Six" is of dimension 1, but "T" needn't be of dimension 2.
+a) S.T. if the range contains a point $(a,b,c)$, then it Should contain the entire set $S$, defined by:
+$S= \{\alpha(a, b,c) \alpha \in {R}\}$ 
 
 
+b) S.T. if the range contains the points $(a, b,c)$ and $(d,e,f)$, then the range contains the entire set $T$ defined by:
+$T=\{\alpha(a, b,c) + \beta(d,e,f) \thinspace/\thinspace  \alpha,\beta\in {R}\}$
+
+
+c)Note: $S$ is of the dimension $1$, but $T$ need'nt be of dimension $2$. Think!
 
 
