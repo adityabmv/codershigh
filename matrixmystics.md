@@ -210,16 +210,16 @@ d) $$1-Dimension$$ <br>
 e) $$0-Dimension$$ <br>
 Give an example each for all the above 5 cases.<br>
 
-7. Consider $A : \mathbb{R^{3}} \to \mathbb{R^{3}} $
+7. Consider $$A : \mathbb{R^{3}} \to \mathbb{R^{3}} $$
 
-a) S.T. if the range contains a point $(a,b,c)$, then it Should contain the entire set $S$, defined by:
-$S= \{\alpha(a, b,c) \alpha \in {R}\}$ 
-
-
-b) S.T. if the range contains the points $(a, b,c)$ and $(d,e,f)$, then the range contains the entire set $T$ defined by:
-$T=\{\alpha(a, b,c) + \beta(d,e,f) \thinspace/\thinspace  \alpha,\beta\in {R}\}$
+a) S.T. if the range contains a point $$(a,b,c)$$, then it Should contain the entire set $S$, defined by:
+$$S= \{\alpha(a, b,c) \alpha \in {R}\}$$ 
 
 
-c)Note: $S$ is of the dimension $1$, but $T$ need'nt be of dimension $2$. Think!
+b) S.T. if the range contains the points $$(a,b,c)$$ and $$(d,e,f)$$, then the range contains the entire set $$T$$ defined by:
+$$T=\{\alpha(a,b,c) + \beta(d,e,f) \thinspace/\thinspace  \alpha,\beta\in {R}\}$$
+
+
+c) Note: $$S$$ is of the dimension $$1$$, but $$T$$ need'nt be of dimension $$2$$. Think!
 
 
