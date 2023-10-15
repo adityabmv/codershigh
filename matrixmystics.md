@@ -158,7 +158,7 @@ $$W= \{\alpha(1,2,1) + \beta(2,7.3) | \alpha,\beta \in \mathbb{R}\} $$
 8. In the above set W find out all the points satisfying $$(x,y,z)$$ satisfying the following: (Use Geogebra)
 $$\begin{bmatrix}w1 & w2 & w3\\
 \end{bmatrix}  \begin{bmatrix} x\\ y \\ z\\ \end{bmatrix}=0 $$
- where $$(w1,w2,w3) \in \mathbb W$$
+ where $$(w1,w2,w3)$$ are co-ordinates of a vector in $$W$$.
 
 9. Given the matrix $$A=\begin{bmatrix}1 & 2 & 3\\ 4 & 5 &6\\ 7 & 8 & 9\\ \end{bmatrix}$$, find out all the possible $$(x,y,z)$$ such that:
 $$ \begin{bmatrix}1 & 2 & 3\\ 4 & 5 &6\\ 7 & 8 & 9\\ \end{bmatrix} \begin{bmatrix} x\\ y\\ z\\ \end{bmatrix}=0$$
@@ -184,6 +184,7 @@ iii)$$2y+x=1800$$
 
 15. You have achieved the required wisdom if you have realized that: <br>
 $$B=\begin{bmatrix} 1 & 2 \\ 2 & 4\\ \end{bmatrix}:\mathbb{R^2}\mapsto \mathbb{R^2}$$. <br>
+" $$B$$ collapses a dimension ".<br>
 
 # Module 4
 
