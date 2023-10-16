@@ -133,8 +133,8 @@ Draw the vector $$\begin{bmatrix}1 \\
 2. Do you observe that we are asking for vectors $$\begin{bmatrix}x \\
 y \\
 \end{bmatrix}$$ such that,
-$$\begin{bmatrix}x & y \\
-\end{bmatrix}  \begin{bmatrix} 1\\ 1 \\ \end{bmatrix}=0 $$
+$$\begin{bmatrix}1 & 1 \\
+\end{bmatrix}  \begin{bmatrix} x\\ y \\ \end{bmatrix}=0 $$
 
 3. Use Geogebra and solve the above question with $$\begin{bmatrix}   1 \\
 1 \\
@@ -143,8 +143,8 @@ b \\
 \end{bmatrix}$$.Use $$(a,b)$$ as parameters and check what happens to $$(x,y)$$.
 
 4. What is $$(x,y,z)$$ satisfying the following equation? (Use Geogebra)
-$$\begin{bmatrix}x & y & z\\
-\end{bmatrix}  \begin{bmatrix} 1\\ 2 \\ 3\\ \end{bmatrix}=0 $$
+$$\begin{bmatrix}1 & 2 & 3\\
+\end{bmatrix}  \begin{bmatrix} x\\ y \\ z\\ \end{bmatrix}=0 $$
 
 5. Use Geogebra and plot all the points in the set below.
 $$T= \{ \beta(1,2,1) | \beta \in \mathbb{R}\} $$
