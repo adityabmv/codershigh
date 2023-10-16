@@ -147,7 +147,7 @@ $$\begin{bmatrix}1 & 2 & 3\\
 \end{bmatrix}  \begin{bmatrix} x\\ y \\ z\\ \end{bmatrix}=0 $$
 
 5. Use Geogebra and plot all the points in the set below.
-$$T= \{ \beta(1,2,1) | \beta \in \mathbb{R}\} $$
+$$T= \{ \alpha(1,2,1) | \alpha \in \mathbb{R}\} $$
 
 6. Use Geogebra and plot all the points in the set below.
 $$S= \{ \beta(2,7.3) | \beta \in \mathbb{R}\} $$
