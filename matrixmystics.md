@@ -150,10 +150,10 @@ $$\begin{bmatrix}1 & 2 & 3\\
 $$T= \{ \alpha(1,2,1) | \alpha \in \mathbb{R}\} $$
 
 6. Use Geogebra and plot all the points in the set below.
-$$S= \{ \beta(2,7.3) | \beta \in \mathbb{R}\} $$
+$$S= \{ \beta(2,7,3) | \beta \in \mathbb{R}\} $$
 
 7. Use Geogebra and plot all the points in the set below.
-$$W= \{\alpha(1,2,1) + \beta(2,7.3) | \alpha,\beta \in \mathbb{R}\} $$
+$$W= \{\alpha(1,2,1) + \beta(2,7,3) | \alpha,\beta \in \mathbb{R}\} $$
 
 8. In the above set W find out all the points satisfying $$(x,y,z)$$ satisfying the following: (Use Geogebra)
 $$\begin{bmatrix}w1 & w2 & w3\\
