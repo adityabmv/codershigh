@@ -197,7 +197,7 @@ $$B=\begin{bmatrix} 1 & 2 \\ 2 & 4\\ \end{bmatrix}:\mathbb{R^2}\mapsto \mathbb{R
 
 3. What is  the null-space of $$M=\begin{bmatrix} 1 & 3 \\ 2 & 6\\ \end{bmatrix}$$ & the null-space of $$M^T$$?<br>
 
-4. Do you observe that $$C(M)$$ &#x22A5; $$N(M^T)$$ &nbsp; $$R(M)$$ &#x22A5; $$N(M^T)$$ ?<br>
+4. Do you observe that $$C(M)$$ &#x22A5; $$N(M^T)$$ , &nbsp; $$R(M)$$ &#x22A5; $$N(M)$$ ?<br>
 
 5. Consider $$A=\begin{bmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \\ 7 & 8 & 9 \\ \end{bmatrix}$$. What is $$N(A)$$, $$C(A)$$, $$R(A)$$, $$N(A^T)$$.<br>
 
