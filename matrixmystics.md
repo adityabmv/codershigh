@@ -210,10 +210,10 @@ e) $$0-Dimension$$ <br>
 Give an example each for all the above 5 cases.<br>
 
 7. Consider $$A : \mathbb{R^{3}} \to \mathbb{R^{3}} $$<br>
-a) S.T. if the range contains a point $$(a,b,c)$$, then it should contain the entire set $$S$$, defined by:
-$$S= \{\alpha(a, b,c)/ \alpha \in \mathbb{R}\}$$. <br>
-b) S.T. if the range contains the points $$(a,b,c)$$ and $$(d,e,f)$$, then the range contains the entire set $$T$$ defined by:
-$$T=\{\alpha(a,b,c) + \beta(d,e,f) \thinspace/\thinspace  \alpha,\beta\in \mathbb{R}\}$$.<br>
+a) Show that if the range contains a point $$(a,b,c)$$, then it should contain the entire set $$S$$, defined by:
+$$S= \{\alpha(a, b,c)| \alpha \in \mathbb{R}\}$$. <br>
+b) Show that if the range contains the points $$(a,b,c)$$ and $$(d,e,f)$$, then the range contains the entire set $$T$$ defined by:
+$$T=\{\alpha(a,b,c) + \beta(d,e,f) \thinspace|\thinspace  \alpha,\beta\in \mathbb{R}\}$$.<br>
 c) Note: $$S$$ is of the dimension $$1$$, but $$T$$ need'nt be of dimension $$2$$. Think! 
 
 # Module 5
