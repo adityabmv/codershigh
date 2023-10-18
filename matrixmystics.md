@@ -69,11 +69,11 @@ ___
 
 ---
 
-1. A is assigned 0, B:1, C:2, and so on up to Z:25<br>
-Assume you denoted every letter with a number, as given in the table above.<br> You need to encrypt the word "SUDARSHANA" which stands for the numbers: $$18, 20, 3, 0, 17, 18, 7, 0, 13,0$$. <br>
+1. $$A$$ is assigned $$0$$, $$B:1$$, $$C:2$$, and so on up to $$Z:25$$<br>
+Assume you denoted every letter with a number, as given in the table above.<br> You need to encrypt the word $$SUDARSHANA$$ which stands for the numbers: $$18, 20, 3, 0, 17, 18, 7, 0, 13,0$$. <br>
 You encrypt this using a matrix given by : $$ \left( \begin{matrix} 2 & 3 \\3 & 4 \\\end{matrix}\right) $$. <br>
-So "SUDARSHANA" will end up becoming: $$96, 134, 6, 9, 88, 123, 14, 21, 26, 39$$. <br>
-Given these numbers, how will you decrypt the message and get back "SUDARSHANA"?<br>. This is a well known cryptographic protocol called the Hill Cipher. You can read more online.
+So $$SUDARSHANA$$ will end up becoming: $$96, 134, 6, 9, 88, 123, 14, 21, 26, 39$$. <br>
+Given these numbers, how will you decrypt the message and get back $$SUDARSHANA$$?<br>. This is a well known cryptographic protocol called the Hill Cipher. You can read more online.
 1. We encounter equations very often in our lives. Consider for example, the following situation at ___Baker's Cafe___. The manager has a very important estimate to make. Mostly, visitors at his cafe happen to be families and they are often comprised of Children and/or Adults. He observes that there are 3 adults and 1 child at a table and their bill turns out to be Rs.1200/-. There is yet another table with 2 children and 1 adult and their bill comes out to be Rs.1000/-. Can the manager estimate the consumption of a Child/Adult? This is popularly called the _Simultaneous Equations_ and we all remember from our school days, multiple ways in which these can be solved.<br>
    $$ 3A + 1C = 1200 $$   
    $$ 1A + 2C = 1000 $$
