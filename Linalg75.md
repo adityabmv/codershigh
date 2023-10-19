@@ -399,7 +399,7 @@ permalink: /linalg75/
 
     - Give an example of a $$\phi$$ such that $$S$$ is its null space.
 
-    - Give an example of a $$\phi$$ such that S is the the
+    - Give an example of a $$\phi$$ such that $$S$$ is the the
         range of $$\phi$$.
 
 68. Let $$A =$$ 
