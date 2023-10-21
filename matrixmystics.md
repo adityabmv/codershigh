@@ -21,7 +21,7 @@ ___
 
 4. Observe that they all pass through the origin. Why?
 
-5. Plot $$y=2x+1$$. Why doesn't it pass through the origin? #chetan, change this to "Observe this line, why doesn't it pass through the origin?"
+5. Plot $$y=2x+1$$. Observe, Why doesn't it pass through the origin?
 
 6. Plot $$y=ax+b$$, with $$a$$ and $$b$$ as parameters which you should be able to vary. What do you observe?
 
