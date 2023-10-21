@@ -5,7 +5,7 @@ order: 5
 permalink: /matrixmystics/
 ---
 
-Modaules are createdd with a  rule that it will get over in a month one should be able to finish them in about one day. 
+Modaules are not created for one sitting sessions. TAke your own time. Also, with a  rule that it will get over in a month one should be able to finish them in about one day. 
 
 * TOC
 {:toc}
