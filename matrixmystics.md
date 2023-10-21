@@ -5,7 +5,7 @@ order: 5
 permalink: /matrixmystics/
 ---
 
-Modules are created with a thumb rule that one should be able to finish them in about one to two days.  
+Modules are created with a thumb rule that one should be able to finish them in about one day. 
 
 * TOC
 {:toc}
