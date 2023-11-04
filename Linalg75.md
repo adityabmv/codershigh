@@ -26,12 +26,12 @@ permalink: /linalg75/
 2. Define a function. What is a surjective, injective and bijective
    function?
 
-3. Given an example of a function
+3. Give an example of a function
    $$
    f:\mathbb{R}^2\rightarrow\mathbb{R}^2
    $$
 
-4. Given an example of a very nice function
+4. Give an example of a very nice function
    $$f:\mathbb{R}^2\rightarrow\mathbb{R}^2$$
    - Make extra efforts to make this function really nice. 
    - Explain what is so nice about your
@@ -59,9 +59,9 @@ permalink: /linalg75/
    Lookup for the definition of a vector space.
 
 8. A subset of a vector space which in itself is a vector space is
-   caled a subspace. Given an example of a subspace of $$\mathbb{R}^2$$.
+   caled a subspace. Give an example of a subspace of $$\mathbb{R}^2$$.
 
-9. Given a vector $$(1,7)$$ what does the set
+9. Given a vector $$(1,7)$$, what does the set
    $$\{ \alpha(1,7) | \alpha \in \mathbb{R}\}$$ represent? Is it a
    subspace of $$\mathbb{R}^2$$?
 
