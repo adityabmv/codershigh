@@ -58,7 +58,7 @@ ___
 
 13. Consider the function $$\phi : \mathbb{R}^2\rightarrow \mathbb{R}^2$$ defined by $$\phi (x,y)=(2x+3y,3x+4y)$$. What has this to do with the previous question?
 
-14. Is the function $$\phi$$ invertible? In the question above on matrices, we see that it is of the form $$Ax=b$$. Note that we can invert the matrix, using the method that was taught to us in our high school to find out the value for the variables $$x$$ and $$y$$. This is one of the many applications of matrices.
+14. Is the function $$\phi$$ invertible? In the question above on matrices, we see that it is of the form $$A\vec{x}=b$$. Note that we can invert the matrix, using the method that was taught to us in our high school to find out the value for the variables $$x$$ and $$y$$. This is one of the many applications of matrices.
 
 15. We will now see matrices as functions. Instead of $$\phi$$ we will write the matrix itself: <br>$$\left( \begin{matrix} 2 & 3 \\3 & 4 \\\end{matrix}\right) : \mathbb{R}^2 \rightarrow \mathbb{R}^2$$. 
 
