@@ -82,16 +82,16 @@ permalink: /linalg75/
 
 15. What are all the subspaces of $$\mathbb{R}^3$$?
 
-16. Given $$\mathbb{R}^3$$, pick any two points $$u,v\in \mathbb{R}^3$$.
-    Note that $$\{\alpha u+\beta v | \alpha, \beta \in \mathbb{R}\}$$ is a
+16. Given $$\mathbb{R}^3$$, pick any two points $$\vec{u},\vec{v}\in \mathbb{R}^3$$.
+    Note that $$\{\alpha \vec{u}+\beta \vec{v} | \alpha, \beta \in \mathbb{R}\}$$ is a
     subspace of $$\mathbb{R}^3$$. Generalize this idea!
 
-17. The set $$\{\alpha u + \beta v | \alpha, \beta \in \mathbb{R}\}$$ is
-    called the linear combination of vectors $$u$$ and $$v$$. We can
+17. The set $$\{\alpha \vec{u} + \beta \vec{v} | \alpha, \beta \in \mathbb{R}\}$$ is
+    called the linear combination of vectors $$\vec{u}$$ and $$\vec{v}$$. We can
     generalize this to $$k$$ vectors. Observe what this set is all about?
 
-18. We say that a vector $$w$$ is manufactured by $$u$$ and $$v$$ if
-    $$w\in \{\alpha u +\beta v | \alpha, \beta \in \mathbb{R} \}$$.
+18. We say that a vector $$\vec{w}$$ is manufactured by $$\vec{u}$$ and $$\vec{v}$$ if
+    $$w\in \{\alpha \vec{u} +\beta \vec{v} | \alpha, \beta \in \mathbb{R} \}$$.
 
 19. Show that $$(1,2,3)$$ and $$(4,5,6)$$ can manufacture $$(7,8,9)$$. Also
     $$(4,5,6)$$ and $$(7,8,9)$$ can manufacture $$(1,2,3)$$. Finally $$(4,5,6)$$
@@ -107,14 +107,14 @@ permalink: /linalg75/
 23. When can two vectors in $$\mathbb{R}^3$$ fail to manufacture a given
     third vector?
 
-24. If $$\{u,v,w\}$$ are such that a vector in this set can be
+24. If $$\{\vec{u},\vec{v},\vec{w}\}$$ are such that a vector in this set can be
     manufactured by some vectors in the same set, then such a set is
     called a linearly dependent set.
 
 25. Give examples of a linearly dependent set in $$\mathbb{R}^3$$ and get
     conversant with the definition.
 
-26. If $$\{u,v,w\}$$ are such that no vector in this set can be
+26. If $$\{\vec{u},\vec{v},\vec{w}\}$$ are such that no vector in this set can be
     manufactured by any combination of vectors in the same set, then such
     a set is called a linearly independent set.
 
@@ -180,9 +180,9 @@ permalink: /linalg75/
     $$\mathbb{R}^2 : \left \{(1,2),(2,2)\right \}$$. Construct a function
     $$\phi:\mathbb{R}^2\rightarrow \mathbb{R}^2$$ such that:
 
-    $$\phi(u+v)=\phi(u)+\phi(v)$$
+    $$\phi(\vec{u}+\vec{v})=\phi(\vec{u})+\phi(\vec{v})$$
 
-    $$\phi(\alpha u)= \alpha \phi(u)$$
+    $$\phi(\alpha \vec{u})= \alpha \phi(\vec{u})$$
 
     Such a function is called a LT function,
 
@@ -218,16 +218,16 @@ permalink: /linalg75/
 44. Give an example of an LT function which maps a L.I. set of vectors
     to a L.I. set of vectors i.e.
     $$\phi:\mathbb{R}^2 \rightarrow \mathbb{R}^2$$, where
-    $$\left \{ u,v \right \}$$ are L.I. $$\&$$
-    $$\left \{\phi(u), \phi(v)\right \}$$ are also L.I.
+    $$\left \{ \vec{u},\vec{v} \right \}$$ are L.I. $$\&$$
+    $$\left \{\phi(\vec{u}), \phi(\vec{v})\right \}$$ are also L.I.
 
-45. Same as the previous question, but $$\left \{ u,v \right \}$$ is L.I.
-    and $$\left \{\phi(u), \phi(v)\right \}$$ is L.D.\
+45. Same as the previous question, but $$\left \{ \vec{u},\vec{v} \right \}$$ is L.I.
+    and $$\left \{\phi(\vec{u}), \phi(\vec{v})\right \}$$ is L.D.\
     What can one say about the range?
 
 46. Note that range of a L.I function is always a subspace.
 
-47. Note that the set N=$$\{v: \phi(v)=0\}$$ is a subspace of $$R^2$$ where
+47. Note that the set N=$$\{\vec{v}: \phi(\vec{v})=0\}$$ is a subspace of $$R^2$$ where
     $$\phi:\mathbb{R}^2\rightarrow \mathbb{R}^2$$ is L.I . Take atleast 5
     different examples of L.I functions and see if this is true. The set
     $$N\subseteq Domain$$ is called the null space of $$\phi$$.
@@ -281,23 +281,23 @@ permalink: /linalg75/
 
 	<br>
 
-54. Given $$V_{1}$$ , $$V_{2}$$ & $$V_{3}$$ are L.I. , S.T.
+54. Given $$\overrightarrow{V}_{1}$$ , $$\overrightarrow{V}_{2}$$ & $$\overrightarrow{V}_{3}$$ are L.I. , S.T.
 
-    - $$\left \{ V_{2} - V_{3} , V_{1} - V_{3} , V_{1} - V_{2} \right \}$$
+    - $$\left \{ \overrightarrow{V}_{2} - \overrightarrow{V}_{3} , \overrightarrow{V}_{1} - \overrightarrow{V}_{3} , \overrightarrow{V}_{1} - \overrightarrow{V}_{2} \right \}$$
     are L.D.
 
-    - $$\left \{ V_{1} + V_{2} , V_{1} + V_{3} , V_{2} + V_{3} \right \}$$
+    - $$\left \{ \overrightarrow{V}_{1} + \overrightarrow{V}_{2} , \overrightarrow{V}_{1} + \overrightarrow{V}_{3} , \overrightarrow{V}_{2} + \overrightarrow{V}_{3} \right \}$$
     are L.I.
 
-55. Given vectors $$\left \{ V_{1} , V_{2} , V_{3} , V_{4} \right \}$$
-    their sum is 0 = $$V_{1}$$ + $$V_{2}$$ + $$V_{3}$$ + $$V_{4}$$ . Is this set
+55. Given vectors $$\left \{ \overrightarrow{V}_{1} , \overrightarrow{V}_{2} , \overrightarrow{V}_{3} , \overrightarrow{V}_{4} \right \}$$
+    their sum is 0 = $$\overrightarrow{V}_{1}$$ + $$\overrightarrow{V}_{2}$$ + $$\overrightarrow{V}_{3}$$ + $$\overrightarrow{V}_{4}$$ . Is this set
     L.I or L.D. ?
 
 56. Show that the following are equivalent:
 
-    - The vectors $$\{v_1,v_2,\dots, v_n\}$$ are linearly independent.<br>
+    - The vectors $$\{\vec{v}_1,\vec{v}_2,\dots, \vec{v}_n\}$$ are linearly independent.<br>
 
-    - $$\forall \alpha_1, \alpha_2, \dots, \alpha_n \in \mathbb{R}\  \left( \sum_{i=1}^{n} \alpha_i v_i = 0 \implies \alpha_j = 0\ \forall 1 \leq j \leq n\right)$$.<br>
+    - $$\forall \alpha_1, \alpha_2, \dots, \alpha_n \in \mathbb{R}\  \left( \sum_{i=1}^{n} \alpha_i \vec{v}_i = 0 \implies \alpha_j = 0\ \forall 1 \leq j \leq n\right)$$.<br>
 
 57. In the following six matrices find out the following:
 
@@ -442,7 +442,7 @@ permalink: /linalg75/
 72. Show that, if a matrix $$A$$ has linearly independent column vectors,
     then the columns of the matrix $$A^2$$ are also linearly independent.
 
-73. $$Ax = Ay \iff x=y$$ . Is this true? If False, when is the statement
+73. $$A\vec{x} = A\vec{y} \iff \vec{x}=\vec{y}$$ . Is this true? If False, when is the statement
     False and what leads to the falsity of the statement?
 
 74. Let $$M$$ be a $$3\times 3$$ matrix, such that, the dim(Range) =3. Show 
@@ -450,4 +450,3 @@ permalink: /linalg75/
 
 75. Consider a $$10 \times 10$$ matrix with all its entries to be $$1$$.
     What is the dimension of its range?
-
