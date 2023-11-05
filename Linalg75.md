@@ -84,8 +84,8 @@ permalink: /linalg75/
 
 16. What are all the subspaces of $$\mathbb{R}^3$$?
 
-17. Given $$\mathbb{R}^3$$, pick any two points $$\vec{u},\vec{v}\in \mathbb{R}^3$$.
-    Note that $$\{\alpha \vec{u}+\beta \vec{v} | \alpha, \beta \in \mathbb{R}\}$$ is a
+17. Given $$\mathbb{R}^3$$, pick any two points $$u,v\in \mathbb{R}^3$$.
+    Note that $$\{\alpha u+\beta v | \alpha, \beta \in \mathbb{R}\}$$ is a
     subspace of $$\mathbb{R}^3$$. Generalize this idea!
 
 18. The set $$\{\alpha \vec{u} + \beta \vec{v} | \alpha, \beta \in \mathbb{R}\}$$ is
