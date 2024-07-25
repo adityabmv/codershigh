@@ -30,7 +30,8 @@
 header_pages:
   - Introduction.md
   - Oceanverse.md
-  - Questions.md
+  # - Questions.md
+  - Programming.md
   - Faq.md
 
 
