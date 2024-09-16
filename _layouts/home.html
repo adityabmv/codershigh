@@ -1,39 +1,237 @@
 ---
 layout: default
 ---
-<div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}  </h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swagatam</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      color: #000000;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+    }
+
+    .home {
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 10px;
+    }
+
+    .navigation {
+      margin-bottom: 20px;
+    }
+
+    .navigation ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+
+    .navigation ul li {
+      margin-right: 20px;
+      margin-bottom: 10px;
+    }
+
+    .navigation ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .navigation li a:hover {
+      color: #ff6600;
+    }
+
+    .hero-section {
+      width: 100%;
+      min-height: 100vh;
+      background-image: url('images/markov2.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: right top;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 20px;
+    }
+
+    .hero-content {
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 600px;
+    }
+
+    .hero-text h1 {
+      font-size: 26px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+      margin-bottom: 15px;
+      color: black;
+    }
+
+    .hero-text p {
+      font-size: 14px;
+      margin-bottom: 20px;
+      color: black;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #00BFFF;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+      margin-bottom: 10px;
+    }
+
+    .btn:hover {
+      background-color: #008CBA;
+    }
+
+    .content {
+      padding: 20px;
+    }
+
+    .post-list-heading {
+      font-size: 1.5em;
+      margin-bottom: 20px;
+    }
+
+    .post-list li {
+      margin-bottom: 20px;
+    }
+
+    .post-meta {
+      font-size: 0.9em;
+      color: #666;
+    }
+
+    .post-link {
+      color: #333;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .post-link:hover {
+      color: #ff6600;
+    }
+
+    .svg-icon {
+      width: 16px;
+      height: 16px;
+    }
+
+    @media (max-width: 768px) {
+      .hero-section {
+        background-position: center;
+      }
+
+      .hero-content {
+        max-width: 100%;
+      }
+
+      .hero-text h2 {
+        font-size: 20px;
+      }
+
+      .hero-text p {
+        font-size: 12px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .btn {
+        padding: 8px 16px;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="home">
+<!--     <nav class="navigation">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav> -->
+
+    <div class="hero-section">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1><b>Coder's High Association<b></h1>
+          <p>
+            Embark on an exhilarating journey into the captivating realm of Computing with our vibrant and engaging sessions .
+          <a href="https://forms.gle/FDdvyH9Acg7imp9QA" class="btn">Register Now</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="content"style="padding-left: 10vw; padding-right:10vw;">
+      {{ content }}
+    </div>
+
+
+    <!-- {%- if site.posts.size > 0 -%}
+    <div class="recent-posts">	
+      <h1 class="post-list-heading">Recent Posts</h1>
+      <ul class="post-list">
+        {%- for post in site.posts limit: 1 -%}
+        <li>-->
+        <!--  {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+          <span class="post-meta">{{ post.date | date: date_format }}</span>
+        
+            <a class="post-link" href="/aicamp/dashboard/">
+              <h6>
+              Matrix Mystics
+              </h6>
+            </a> -->
+          
+          {%- if site.show_excerpts -%}
+            {{ post.excerpt }}
+          {%- endif -%}
+        </li>
+        {%- endfor -%}
+      </ul>
+      <!-- <a href="" class="btn">View All Posts</a> -->
+    </div>
   {%- endif -%}
-
-  {{ content }}
-
-{% comment %}
-
-  {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-    <ul class="post-list">
-      {%- for post in site.posts -%}
-      <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-      </li>
-      {%- endfor -%}
-    </ul>
-
-	<!--The following code is removed-->
-	<!--<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>-->
-  {%- endif -%}
-
-{% endcomment %}
   
-
-</div>
+<!--     {% if site.posts.size > 0 %}
+      <div class="recent-posts">	
+        <h1 class="post-list-heading">Recent Posts</h1>
+        <ul class="post-list">
+          {% for post in site.posts limit: 1 %}
+            <li>
+              {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+              <span class="post-meta">{{ post.date | date: date_format }}</span>
+              <a class="post-link" href="{{ post.url | relative_url }}">
+                <h6>{{ post.title | escape }}</h6>
+              </a>
+              {% if site.show_excerpts %}
+                {{ post.excerpt }}
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %} -->
+  </div>
+</body>
+</html>
