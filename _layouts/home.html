@@ -184,16 +184,17 @@ layout: default
     }
 
     .testimonial-item {
-      flex: 0 0 100%;
-      text-align: center;
-      font-size: 18px;
-      opacity: 0;
-      transition: opacity 0.5s ease;
-    }
+  flex: 0 0 100%;
+  text-align: center;
+  font-size: 18px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  }
 
-    .testimonial-item.active {
-      opacity: 1;
-    }
+.testimonial-item.active {
+  opacity: 1;
+  }
+
 
     .arrow {
       position: absolute;
@@ -256,25 +257,30 @@ layout: default
   </div>
 
   <script>
-    let currentTestimonialIndex = 0;
-    const testimonialContainer = document.getElementById('testimonial-container');
-    const testimonialItems = document.querySelectorAll('.testimonial-item');
-    const testimonialWidth = 100; // since each testimonial takes 100% width
+  let currentTestimonialIndex = 0;
+  const testimonialItems = document.querySelectorAll('.testimonial-item');
 
-    function showTestimonial(index) {
-      // Move the testimonial container based on the index
-      testimonialContainer.style.transform = `translateX(-${index * testimonialWidth}%)`;
-    }
+  function showTestimonial(index) {
+    // Remove 'active' class from all testimonials
+    testimonialItems.forEach(item => item.classList.remove('active'));
 
-    function nextTestimonial() {
-      currentTestimonialIndex = (currentTestimonialIndex + 1) % testimonialItems.length;
-      showTestimonial(currentTestimonialIndex);
-    }
+    // Add 'active' class to the current testimonial
+    testimonialItems[index].classList.add('active');
+  }
 
-    function prevTestimonial() {
-      currentTestimonialIndex = (currentTestimonialIndex - 1 + testimonialItems.length) % testimonialItems.length;
-      showTestimonial(currentTestimonialIndex);
-    }
-  </script>
+  function nextTestimonial() {
+    currentTestimonialIndex = (currentTestimonialIndex + 1) % testimonialItems.length;
+    showTestimonial(currentTestimonialIndex);
+  }
+
+  function prevTestimonial() {
+    currentTestimonialIndex = (currentTestimonialIndex - 1 + testimonialItems.length) % testimonialItems.length;
+    showTestimonial(currentTestimonialIndex);
+  }
+
+  // Show the first testimonial initially
+  showTestimonial(currentTestimonialIndex);
+</script>
+
 </body>
 </html>
