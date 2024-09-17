@@ -178,18 +178,18 @@ layout: default
     }
 
     .testimonial {
-      display: flex;
-      transition: transform 0.5s ease;
-      width: 100%;
-    }
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 100%;
+}
 
-    .testimonial-item {
+.testimonial-item {
   flex: 0 0 100%;
   text-align: center;
   font-size: 18px;
-  opacity: 0;
-  transition: opacity 0.5s ease;
-  }
+  opacity: 1; /* Keep opacity 1 because we're sliding now */
+}
+
 
 .testimonial-item.active {
   opacity: 1;
@@ -256,24 +256,25 @@ layout: default
     <button class="arrow arrow-right" onclick="nextTestimonial()">&#8250;</button>
   </div>
 
-  <script>
+<script>
   let currentTestimonialIndex = 0;
   const testimonialItems = document.querySelectorAll('.testimonial-item');
+  const testimonialContainer = document.getElementById('testimonial-container');
 
   function showTestimonial(index) {
-    // Remove 'active' class from all testimonials
-    testimonialItems.forEach(item => item.classList.remove('active'));
-
-    // Add 'active' class to the current testimonial
-    testimonialItems[index].classList.add('active');
+    // Calculate the correct translation distance based on the testimonial index
+    const testimonialWidth = 100; // Each testimonial takes up 100% width
+    testimonialContainer.style.transform = `translateX(-${index * testimonialWidth}%)`;
   }
 
   function nextTestimonial() {
+    // Move to the next testimonial, looping back to the start if needed
     currentTestimonialIndex = (currentTestimonialIndex + 1) % testimonialItems.length;
     showTestimonial(currentTestimonialIndex);
   }
 
   function prevTestimonial() {
+    // Move to the previous testimonial, looping back to the last if needed
     currentTestimonialIndex = (currentTestimonialIndex - 1 + testimonialItems.length) % testimonialItems.length;
     showTestimonial(currentTestimonialIndex);
   }
