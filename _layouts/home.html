@@ -241,12 +241,12 @@ layout: default
       <p class="section-text">The Coder's High Association is a place where technology enthusiasts come together to explore the captivating world of programming and computing. Whether you're a beginner or an experienced coder, we offer engaging sessions designed to challenge and inspire you. Our focus is on hands-on learning, creativity, and collaboration. We believe that coding is not just about writing programs—it's about solving problems, building solutions, and shaping the future.</p>
       <p class="section-text">Join us for our upcoming events, where we’ll dive deep into various topics, from algorithms to web development, AI, and beyond. With a supportive community and expert mentors, you’ll find the perfect environment to enhance your coding skills and make lasting connections with like-minded individuals.</p>
 
-     <div class="testimonial-carousel">
+    <div class="testimonial-carousel">
     <button class="arrow arrow-left" onclick="prevTestimonial()">&#8249;</button>
     
     <div class="testimonial-container">
-      <div class="testimonial">
-        <div class="testimonial-item active">"This is an amazing service!"</div>
+      <div class="testimonial" id="testimonial-container">
+        <div class="testimonial-item">"This is an amazing service!"</div>
         <div class="testimonial-item">"I love using this platform every day!"</div>
         <div class="testimonial-item">"Their customer support is top-notch!"</div>
       </div>
@@ -257,24 +257,22 @@ layout: default
 
   <script>
     let currentTestimonialIndex = 0;
-    const testimonials = document.querySelectorAll('.testimonial-item');
-    
+    const testimonialContainer = document.getElementById('testimonial-container');
+    const testimonialItems = document.querySelectorAll('.testimonial-item');
+    const testimonialWidth = 100; // since each testimonial takes 100% width
+
     function showTestimonial(index) {
-      testimonials.forEach((item, i) => {
-        item.classList.remove('active');
-        if (i === index) {
-          item.classList.add('active');
-        }
-      });
+      // Move the testimonial container based on the index
+      testimonialContainer.style.transform = `translateX(-${index * testimonialWidth}%)`;
     }
 
     function nextTestimonial() {
-      currentTestimonialIndex = (currentTestimonialIndex + 1) % testimonials.length;
+      currentTestimonialIndex = (currentTestimonialIndex + 1) % testimonialItems.length;
       showTestimonial(currentTestimonialIndex);
     }
 
     function prevTestimonial() {
-      currentTestimonialIndex = (currentTestimonialIndex - 1 + testimonials.length) % testimonials.length;
+      currentTestimonialIndex = (currentTestimonialIndex - 1 + testimonialItems.length) % testimonialItems.length;
       showTestimonial(currentTestimonialIndex);
     }
   </script>
