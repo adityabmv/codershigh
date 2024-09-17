@@ -155,20 +155,63 @@ layout: default
         font-size: 14px;
       }
     }
+
+    /* Style for the testimonial section */
+    .testimonials-section {
+      position: relative;
+      width: 80%;
+      margin: 0 auto;
+      overflow: hidden;
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Testimonial container to hold the testimonials */
+    .testimonial-container {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+      width: 300%;
+    }
+
+    /* Each testimonial */
+    .testimonial {
+      flex: 1 0 100%;
+      padding: 20px;
+      text-align: center;
+      font-size: 1.2em;
+      color: #333;
+    }
+
+    /* Arrow buttons */
+    .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: transparent;
+      border: none;
+      font-size: 2em;
+      cursor: pointer;
+      color: #333;
+    }
+
+    .left-arrow {
+      left: 20px;
+    }
+
+    .right-arrow {
+      right: 20px;
+    }
+
+    /* Hover effect for arrows */
+    .arrow:hover {
+      color: #007BFF;
+    }
   </style>
 </head>
 <body>
   <div class="container">
-    <!-- Navigation -->
-    <!---<nav class="navigation">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Sessions</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>--->
-
     <!-- Hero Section -->
     <div class="hero-section">
       <div class="hero-content">
@@ -185,7 +228,56 @@ layout: default
       <h2 class="section-heading">About Us</h2>
       <p class="section-text">The Coder's High Association is a place where technology enthusiasts come together to explore the captivating world of programming and computing. Whether you're a beginner or an experienced coder, we offer engaging sessions designed to challenge and inspire you. Our focus is on hands-on learning, creativity, and collaboration. We believe that coding is not just about writing programs—it's about solving problems, building solutions, and shaping the future.</p>
       <p class="section-text">Join us for our upcoming events, where we’ll dive deep into various topics, from algorithms to web development, AI, and beyond. With a supportive community and expert mentors, you’ll find the perfect environment to enhance your coding skills and make lasting connections with like-minded individuals.</p>
+
+      <div class="testimonials-section">
+        <div class="testimonial-container">
+          <div class="testimonial" id="testimonial-1">
+            <p>"This is an amazing platform! I learned so much from the community." — <strong>John Doe</strong></p>
+          </div>
+          <div class="testimonial" id="testimonial-2">
+            <p>"The learning experience here is unlike anywhere else." — <strong>Jane Smith</strong></p>
+          </div>
+          <div class="testimonial" id="testimonial-3">
+            <p>"Highly recommend it to anyone looking to improve their coding skills." — <strong>Emily Davis</strong></p>
+          </div>
+        </div>
+
+        <!-- Left and Right Arrows -->
+        <button class="arrow left-arrow" onclick="moveLeft()">&#10094;</button>
+        <button class="arrow right-arrow" onclick="moveRight()">&#10095;</button>
+      </div>
     </div>
   </div>
+
+  <!-- JavaScript to move between testimonials -->
+  <script>
+    let currentTestimonial = 0;
+    const testimonials = document.querySelectorAll('.testimonial');
+    const totalTestimonials = testimonials.length;
+
+    function moveRight() {
+      if (currentTestimonial < totalTestimonials - 1) {
+        currentTestimonial++;
+      } else {
+        currentTestimonial = 0;
+      }
+      updateTestimonial();
+    }
+
+    function moveLeft() {
+      if (currentTestimonial > 0) {
+        currentTestimonial--;
+      } else {
+        currentTestimonial = totalTestimonials - 1;
+      }
+      updateTestimonial();
+    }
+
+    function updateTestimonial() {
+      const testimonialContainer = document.querySelector('.testimonial-container');
+      const translateXValue = -currentTestimonial * 100;
+      testimonialContainer.style.transform = `translateX(${translateXValue}%)`;
+    }
+  </script>
 </body>
 </html>
