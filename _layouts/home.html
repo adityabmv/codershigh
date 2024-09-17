@@ -157,56 +157,68 @@ layout: default
     }
 
     /* Style for the testimonial section */
-    .testimonials-section {
-      position: relative;
-      width: 80%;
-      margin: 0 auto;
-      overflow: hidden;
-      background-color: #f9f9f9;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    /* Testimonial container to hold the testimonials */
-    .testimonial-container {
+    
+    .testimonial-carousel {
       display: flex;
-      transition: transform 0.5s ease-in-out;
-      width: 300%;
-    }
-
-    /* Each testimonial */
-    .testimonial {
-      flex: 1 0 100%;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
       padding: 20px;
-      text-align: center;
-      font-size: 1.2em;
-      color: #333;
+      background-color: #f8f8f8;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      position: relative;
     }
 
-    /* Arrow buttons */
+    .testimonial-container {
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .testimonial {
+      display: flex;
+      transition: transform 0.5s ease;
+      width: 100%;
+    }
+
+    .testimonial-item {
+      flex: 0 0 100%;
+      text-align: center;
+      font-size: 18px;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+
+    .testimonial-item.active {
+      opacity: 1;
+    }
+
     .arrow {
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
-      background-color: transparent;
+      background-color: white;
       border: none;
-      font-size: 2em;
+      font-size: 24px;
       cursor: pointer;
-      color: #333;
+      border-radius: 50%;
+      padding: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease;
     }
 
-    .left-arrow {
-      left: 20px;
-    }
-
-    .right-arrow {
-      right: 20px;
-    }
-
-    /* Hover effect for arrows */
     .arrow:hover {
-      color: #007BFF;
+      background-color: #ddd;
+    }
+
+    .arrow-left {
+      left: -30px;
+    }
+
+    .arrow-right {
+      right: -30px;
     }
   </style>
 </head>
@@ -229,54 +241,41 @@ layout: default
       <p class="section-text">The Coder's High Association is a place where technology enthusiasts come together to explore the captivating world of programming and computing. Whether you're a beginner or an experienced coder, we offer engaging sessions designed to challenge and inspire you. Our focus is on hands-on learning, creativity, and collaboration. We believe that coding is not just about writing programs—it's about solving problems, building solutions, and shaping the future.</p>
       <p class="section-text">Join us for our upcoming events, where we’ll dive deep into various topics, from algorithms to web development, AI, and beyond. With a supportive community and expert mentors, you’ll find the perfect environment to enhance your coding skills and make lasting connections with like-minded individuals.</p>
 
-      <div class="testimonials-section">
-        <div class="testimonial-container">
-          <div class="testimonial" id="testimonial-1">
-            <p>"This is an amazing platform! I learned so much from the community." — <strong>John Doe</strong></p>
-          </div>
-          <div class="testimonial" id="testimonial-2">
-            <p>"The learning experience here is unlike anywhere else." — <strong>Jane Smith</strong></p>
-          </div>
-          <div class="testimonial" id="testimonial-3">
-            <p>"Highly recommend it to anyone looking to improve their coding skills." — <strong>Emily Davis</strong></p>
-          </div>
-        </div>
-
-        <!-- Left and Right Arrows -->
-        <button class="arrow left-arrow" onclick="moveLeft()">&#10094;</button>
-        <button class="arrow right-arrow" onclick="moveRight()">&#10095;</button>
+     <div class="testimonial-carousel">
+    <button class="arrow arrow-left" onclick="prevTestimonial()">&#8249;</button>
+    
+    <div class="testimonial-container">
+      <div class="testimonial">
+        <div class="testimonial-item active">"This is an amazing service!"</div>
+        <div class="testimonial-item">"I love using this platform every day!"</div>
+        <div class="testimonial-item">"Their customer support is top-notch!"</div>
       </div>
     </div>
+
+    <button class="arrow arrow-right" onclick="nextTestimonial()">&#8250;</button>
   </div>
 
-  <!-- JavaScript to move between testimonials -->
   <script>
-    let currentTestimonial = 0;
-    const testimonials = document.querySelectorAll('.testimonial');
-    const totalTestimonials = testimonials.length;
-
-    function moveRight() {
-      if (currentTestimonial < totalTestimonials - 1) {
-        currentTestimonial++;
-      } else {
-        currentTestimonial = 0;
-      }
-      updateTestimonial();
+    let currentTestimonialIndex = 0;
+    const testimonials = document.querySelectorAll('.testimonial-item');
+    
+    function showTestimonial(index) {
+      testimonials.forEach((item, i) => {
+        item.classList.remove('active');
+        if (i === index) {
+          item.classList.add('active');
+        }
+      });
     }
 
-    function moveLeft() {
-      if (currentTestimonial > 0) {
-        currentTestimonial--;
-      } else {
-        currentTestimonial = totalTestimonials - 1;
-      }
-      updateTestimonial();
+    function nextTestimonial() {
+      currentTestimonialIndex = (currentTestimonialIndex + 1) % testimonials.length;
+      showTestimonial(currentTestimonialIndex);
     }
 
-    function updateTestimonial() {
-      const testimonialContainer = document.querySelector('.testimonial-container');
-      const translateXValue = -currentTestimonial * 100;
-      testimonialContainer.style.transform = `translateX(${translateXValue}%)`;
+    function prevTestimonial() {
+      currentTestimonialIndex = (currentTestimonialIndex - 1 + testimonials.length) % testimonials.length;
+      showTestimonial(currentTestimonialIndex);
     }
   </script>
 </body>
