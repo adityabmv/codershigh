@@ -6,7 +6,8 @@ layout: default
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Swagatam</title>
+  <meta name="description" content="Join Coder's High Association to explore engaging and exciting computing sessions. Register now!">
+  <title>Swagatam | Coder's High Association</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -15,20 +16,22 @@ layout: default
       font-family: 'Montserrat', sans-serif;
       font-size: 16px;
       line-height: 1.6;
-      color: #000000;
+      color: #333;
       margin: 0;
       padding: 0;
       width: 100%;
+      background-color: #f4f4f4;
     }
 
-    .home {
-      max-width: 100%;
+    .container {
+      max-width: 1200px;
       margin: 0 auto;
-      padding: 10px;
+      padding: 20px;
     }
 
     .navigation {
-      margin-bottom: 20px;
+      background-color: #333;
+      padding: 10px 0;
     }
 
     .navigation ul {
@@ -36,67 +39,67 @@ layout: default
       padding: 0;
       margin: 0;
       display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-start;
+      justify-content: center;
     }
 
     .navigation ul li {
       margin-right: 20px;
-      margin-bottom: 10px;
     }
 
     .navigation ul li a {
       text-decoration: none;
-      color: #333;
+      color: white;
       font-weight: bold;
+      padding: 10px 15px;
+      display: inline-block;
     }
 
-    .navigation li a:hover {
-      color: #ff6600;
+    .navigation ul li a:hover {
+      background-color: #ff6600;
+      color: #fff;
+      border-radius: 5px;
     }
 
     .hero-section {
-      width: 100%;
-      min-height: 100vh;
-      background-image: url('images/img-T9F34FRn2snDqv3S7ubWA.jpeg');
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: right top;
       display: flex;
       align-items: center;
-      justify-content: flex-start;
-      padding: 20px;
+      justify-content: center;
+      background-image: url('images/img-T9F34FRn2snDqv3S7ubWA.jpeg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      color: white;
+      text-align: center;
     }
 
     .hero-content {
-      background-color: rgba(255, 255, 255, 0.8);
-      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 40px;
       border-radius: 10px;
       max-width: 600px;
     }
 
     .hero-text h1 {
-      font-size: 26px;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-      margin-bottom: 15px;
-      color: black;
+      font-size: 48px;
+      margin-bottom: 20px;
+      color: white;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
     }
 
     .hero-text p {
-      font-size: 14px;
-      margin-bottom: 20px;
-      color: black;
+      font-size: 18px;
+      margin-bottom: 30px;
     }
 
     .btn {
       display: inline-block;
-      padding: 10px 20px;
+      padding: 15px 30px;
       background-color: #00BFFF;
       color: #fff;
       text-decoration: none;
       border-radius: 5px;
-      transition: background-color 0.3s;
-      margin-bottom: 10px;
+      font-size: 18px;
+      transition: background-color 0.3s ease;
     }
 
     .btn:hover {
@@ -104,135 +107,85 @@ layout: default
     }
 
     .content {
-      padding: 20px;
+      background-color: white;
+      padding: 40px;
+      margin-top: -100px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
     }
 
-    .post-list-heading {
-      font-size: 1.5em;
-      margin-bottom: 20px;
+    .section-heading {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 30px;
     }
 
-    .post-list li {
-      margin-bottom: 20px;
-    }
-
-    .post-meta {
-      font-size: 0.9em;
-      color: #666;
-    }
-
-    .post-link {
-      color: #333;
-      text-decoration: none;
-      transition: color 0.3s;
-    }
-
-    .post-link:hover {
-      color: #ff6600;
-    }
-
-    .svg-icon {
-      width: 16px;
-      height: 16px;
+    .section-text {
+      font-size: 18px;
+      text-align: justify;
+      line-height: 1.8;
     }
 
     @media (max-width: 768px) {
-      .hero-section {
-        background-position: center;
-      }
-
-      .hero-content {
-        max-width: 100%;
-      }
-
-      .hero-text h2 {
-        font-size: 20px;
+      .hero-text h1 {
+        font-size: 32px;
       }
 
       .hero-text p {
-        font-size: 12px;
+        font-size: 16px;
+      }
+
+      .btn {
+        padding: 12px 24px;
+        font-size: 16px;
       }
     }
 
     @media (max-width: 480px) {
+      .hero-text h1 {
+        font-size: 28px;
+      }
+
+      .hero-text p {
+        font-size: 14px;
+      }
+
       .btn {
-        padding: 8px 16px;
+        padding: 10px 20px;
         font-size: 14px;
       }
     }
   </style>
 </head>
 <body>
-  <div class="home">
-<!--     <nav class="navigation">
+  <div class="container">
+    <!-- Navigation -->
+    <nav class="navigation">
       <ul>
         <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Sessions</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
-    </nav> -->
+    </nav>
 
+    <!-- Hero Section -->
     <div class="hero-section">
       <div class="hero-content">
         <div class="hero-text">
-          <h1><b>Coder's High Association<b></h1>
-          <p>
-            Embark on an exhilarating journey into the captivating realm of Computing with our vibrant and engaging sessions.
-            <br>
+          <h1>Welcome to Coder's High Association</h1>
+          <p>Join our vibrant community and embark on an exciting journey into the world of computing. Learn, grow, and become a part of something extraordinary. Don’t miss out on our upcoming sessions where creativity meets technology!</p>
           <a href="https://forms.gle/FDdvyH9Acg7imp9QA" class="btn">Register Now</a>
         </div>
       </div>
     </div>
 
-    <div class="content"style="padding-left: 10vw; padding-right:10vw;">
-      {{ content }}
+    <!-- Content Section -->
+    <div class="content">
+      <h2 class="section-heading">About Us</h2>
+      <p class="section-text">The Coder's High Association is a place where technology enthusiasts come together to explore the captivating world of programming and computing. Whether you're a beginner or an experienced coder, we offer engaging sessions designed to challenge and inspire you. Our focus is on hands-on learning, creativity, and collaboration. We believe that coding is not just about writing programs—it's about solving problems, building solutions, and shaping the future.</p>
+      <p class="section-text">Join us for our upcoming events, where we’ll dive deep into various topics, from algorithms to web development, AI, and beyond. With a supportive community and expert mentors, you’ll find the perfect environment to enhance your coding skills and make lasting connections with like-minded individuals.</p>
     </div>
-
-
-    <!-- {%- if site.posts.size > 0 -%}
-    <div class="recent-posts">	
-      <h1 class="post-list-heading">Recent Posts</h1>
-      <ul class="post-list">
-        {%- for post in site.posts limit: 1 -%}
-        <li>-->
-        <!--  {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-          <span class="post-meta">{{ post.date | date: date_format }}</span>
-        
-            <a class="post-link" href="/aicamp/dashboard/">
-              <h6>
-              Matrix Mystics
-              </h6>
-            </a> -->
-          
-          {%- if site.show_excerpts -%}
-            {{ post.excerpt }}
-          {%- endif -%}
-        </li>
-        {%- endfor -%}
-      </ul>
-      <!-- <a href="" class="btn">View All Posts</a> -->
-    </div>
-  {%- endif -%}
-  
-<!--     {% if site.posts.size > 0 %}
-      <div class="recent-posts">	
-        <h1 class="post-list-heading">Recent Posts</h1>
-        <ul class="post-list">
-          {% for post in site.posts limit: 1 %}
-            <li>
-              {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-              <span class="post-meta">{{ post.date | date: date_format }}</span>
-              <a class="post-link" href="{{ post.url | relative_url }}">
-                <h6>{{ post.title | escape }}</h6>
-              </a>
-              {% if site.show_excerpts %}
-                {{ post.excerpt }}
-              {% endif %}
-            </li>
-          {% endfor %}
-        </ul>
-      </div>
-    {% endif %} -->
   </div>
 </body>
 </html>
