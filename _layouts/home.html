@@ -158,26 +158,34 @@ layout: default
 
     /* Style for the testimonial section */
     
-    .testimonial-carousel {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      max-width: 600px;
-      margin: 0 auto;
-      padding: 20px;
-      background-color: #f8f8f8;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      position: relative;
-    }
+   .testimonial-section h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+}
 
-    .testimonial-container {
-      width: 100%;
-      overflow: hidden;
-    }
+.testimonial-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 700px; /* Increased the max-width slightly for more space */
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
 
-    .testimonial {
+.testimonial-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.testimonial {
   display: flex;
   transition: transform 0.5s ease;
   width: 100%;
@@ -187,40 +195,48 @@ layout: default
   flex: 0 0 100%;
   text-align: center;
   font-size: 18px;
-  opacity: 1; /* Keep opacity 1 because we're sliding now */
+  color: #555;
+  font-family: 'Georgia', serif;
 }
 
+.testimonial-item p {
+  margin-bottom: 10px;
+  font-style: italic;
+}
 
-.testimonial-item.active {
-  opacity: 1;
-  }
+.testimonial-item h4 {
+  font-size: 16px;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+  margin-top: 0;
+}
 
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: white;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
 
-    .arrow {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background-color: white;
-      border: none;
-      font-size: 24px;
-      cursor: pointer;
-      border-radius: 50%;
-      padding: 10px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      transition: background-color 0.3s ease;
-    }
+.arrow:hover {
+  background-color: #ddd;
+}
 
-    .arrow:hover {
-      background-color: #ddd;
-    }
+.arrow-left {
+  left: -30px;
+}
 
-    .arrow-left {
-      left: -30px;
-    }
+.arrow-right {
+  right: -30px;
+}
 
-    .arrow-right {
-      right: -30px;
-    }
   </style>
 </head>
 <body>
@@ -242,19 +258,41 @@ layout: default
       <p class="section-text">The Coder's High Association is a place where technology enthusiasts come together to explore the captivating world of programming and computing. Whether you're a beginner or an experienced coder, we offer engaging sessions designed to challenge and inspire you. Our focus is on hands-on learning, creativity, and collaboration. We believe that coding is not just about writing programs—it's about solving problems, building solutions, and shaping the future.</p>
       <p class="section-text">Join us for our upcoming events, where we’ll dive deep into various topics, from algorithms to web development, AI, and beyond. With a supportive community and expert mentors, you’ll find the perfect environment to enhance your coding skills and make lasting connections with like-minded individuals.</p>
 
-    <div class="testimonial-carousel">
+    <div class="testimonial-section">
+  <h2>Testimonials by Our Members</h2>
+
+  <div class="testimonial-carousel">
     <button class="arrow arrow-left" onclick="prevTestimonial()">&#8249;</button>
-    
+
     <div class="testimonial-container">
       <div class="testimonial" id="testimonial-container">
-        <div class="testimonial-item">"This is an amazing service!"</div>
-        <div class="testimonial-item">"I love using this platform every day!"</div>
-        <div class="testimonial-item">"Their customer support is top-notch!"</div>
+        <div class="testimonial-item">
+          <p>"It's a great opportunity and experience for students from all backgrounds to learn and teach simultaneously."</p>
+          <h4>- Remy baastin rayappan </h4>
+        </div>
+        <div class="testimonial-item">
+          <p>"As a member of Coder's High, I can say it’s an amazing platform for collaboration and discussions with peers from institutions across India."</p>
+          <h4>- Suryaansh Sharma</h4>
+        </div>
+        <div class="testimonial-item">
+          <p>"I would highly recommend this club. I honestly have a lot to say about it. But I think it will be wise for you to attend and discover transformative benefits yourself. 😊"</p>
+          <h4>- Alok Bhushan </h4>
+        </div>
+        <div class="testimonial-item">
+          <p>"Joining this community was the best decision I made. I learned not only technical skills but also gained confidence in team-based projects."</p>
+          <h4>- Aditya BMV</h4>
+        </div>
+        <div class="testimonial-item">
+          <p>"The mentorship and resources provided here are exceptional, helping me transition from a novice to a skilled programmer."</p>
+          <h4>- Aashik Bobade</h4>
+        </div>
       </div>
     </div>
 
     <button class="arrow arrow-right" onclick="nextTestimonial()">&#8250;</button>
   </div>
+</div>
+
 
 <script>
   let currentTestimonialIndex = 0;
