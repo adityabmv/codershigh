@@ -1,6 +1,6 @@
 ---
 layout: page
-title: FAQ
+title: JOC @ JKLU
 permalink: /jklu/
 order: 2
 ---
